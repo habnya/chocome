@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <title>CHOCOME</title>
+
+  <style>
+    @font-face {
+      font-family: 'Fair Prosper';
+      src: url('FairProsper.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Arial', serif;
+      background-color: #ecbd7d;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Fair Prosper', ;
+    }
+
+    h2, h3 {
+      margin: 10px 0;
+      color: black;
+    }
+
+    p, h2, .desk {
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-family: Arial, sans-serif;
+      margin: 10px 0;
+    }
+
+    .judul {
+      text-align: center;
+      font-size: 40px;
+      color: darkred;
+    }
+
+    .desk {
+      text-align: center;
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .menu-title {
+      text-align: center;
+      font-size: 28px;
+      font-family: Arial, sans-serif;
+      color: rgb(246, 169, 3);
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 40px;
+    }
+
+    .gambar {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pesan-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    .pesan-button a {
+      font-family: Arial, sans-serif;
+      background-color: orange;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .pesan-button a:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-bar">
+    <div class="header-inner">
+      <!-- Logo kiri -->
+      <img class="logo" src="logo2.png" alt="Logo"/>
+
+      <!-- Judul tengah (satu baris, hitam) -->
+      <h1 class="spesial-title">CHOCOME</h1>
+
+      <!-- NAV -->
+      <nav id="navbar" aria-label="Menu utama">
+        <button id="close-sidebar-button" class="icon-btn" aria-label="Tutup menu">
+          <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#c9c9c9">
+            <path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/>
+          </svg>
+        </button>
+
+        <ul>
+          <li><a class="active-link" href="#home">Home</a></li>
+          <li><a href="pesancth.html">Pesan</a></li>
+          <li><a href="inf.html">Info Kelompok</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger kanan -->
+      <button id="open-sidebar-button" class="icon-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#161616">
+          <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="overlay" aria-hidden="true"></div>
+
+  <main style="padding: 2rem 1rem;">
+    <!-- Konten halaman -->
+  </main>
+
+
+  <h1 class="judul"></h1>
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="https://www.instagram.com/chocome_11tjkt1" target="_blank" rel="noopener"
+     style="background:linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C);
+            color:#fff; padding:10px 16px; border-radius:50px;
+            display:inline-flex; align-items:center; gap:8px; font-weight:bold;
+            text-decoration:none; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
+    <!-- Ikon SVG Instagram -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+         viewBox="0 0 24 24">
+      <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+    </svg>
+    Follow @chocome_11tjkt1
+  </a>
+</div>
+
+
+<div class="desk">
+    Kami menjual beberapa macam makanan dan minuman.<br>
+    Berikut daftar menu kami:
+  </div>
+
+  <h1 class="menu-title">Menu</h1>
+
+  <div class="menu-item">
+    <h2>Mie Goreng </h2>
+    <h3>Rp.8000</h3>
+    <p>Ayooo beli Mie Goreng nya CHOCOME dijamin enak</p>
+    <div class="gambar">
+      <img src="miegrg.jpeg" width="200" height="145" alt="Mie Goreng">
+      <img src="beli_dong.jpeg" width="120" >
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <h2>Es kul kul buah </h2>
+    <h3>Rp.2000</h3>
+    <p>Es kul kul, buah manis dan dingin dicelupin cokelat </p>
+    <div class="gambar">
+      <img src="kulkul.jpg" width="180" height="145" alt="es kul kul">
+      <img src="monyet.png" width="170" height="145" >
+      <p> *melon, pir, anggur, semangka, pisang</p>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <h2>Es Saman Brembo</h2>
+    <h3>Rp.2000</h3>
+    <p>Es Saman Brembo spesial khas CHOCOME, dijamin menjadi kulkas 100 pintu setelah memakannya</p>
+    <div class="gambar">
+      <img src="es_lilin.jpg" width="160" alt="Es lilin">
+      <img src="dingin.jpg" width="180" height="160"
+      
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <h2>Es lumut coklat</h2>
+    <h3>Rp.5000</h3>
+    <p>Es lumut ini dapat menaikkan mood mu :)</p>
+    <div class="gambar">
+      <img src="minum.jpeg" width="180" height="180" alt="Es lilin">
+       <img src="lucu.jpeg" width="180" height="180">
+    </div>
+  </div>
+  
+  <!-- Tombol Pesan di Tengah Bawah -->
+  <div class="pesan-button">
+    <a href="pesancth.html">Pesan Sekarang</a>
+  </div>
+  <p>XI TJKT 1 2025/2026</p>
+
+</body>
+</html>
